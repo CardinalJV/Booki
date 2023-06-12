@@ -1,0 +1,28 @@
+@media screen and (max-width: 768px) {
+    
+    body {
+        width: 100%;
+    }
+    
+    header {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    header ul {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    header ul li {
+        border-top: none;
+        border-bottom: 3px solid transparent;
+        padding-bottom: 15px;
+    }
+
+    header ul li:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;;
+    }
+}
