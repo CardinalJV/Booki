@@ -464,27 +464,27 @@ footer {
     padding-bottom: 10px;
 }
 
-.footer-content {
+footer div {
     width: 30%;
 }
 
-.footer-content ul {
+footer div ul {
     list-style: none;
     margin: 0%;
     padding: 0%;
 }
 
-.footer-content p {
+footer div p {
     font-size: 24px;
     font-weight: bold;
 }
 
-.footer-content ul li {
+footer div ul li {
     margin-bottom: 10px;
     font-size: 18px;
 }
 
-.footer-content ul li:hover {
+footer div ul li:hover {
     cursor: pointer;
     color: #0065FC;
 }
@@ -778,11 +778,11 @@ footer {
         padding-left: 25px;
     }
 
-    .footer-content  {
+    footer div  {
         width: 100%;
     }
 
-    .footer-content p {
+    footer div p {
         width: 100%;
     }
 }
