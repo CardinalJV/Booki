@@ -7,7 +7,7 @@
 body {
     max-width: 1440px;
     margin: auto;
-    margin-top: none;
+    margin-top: 0%;
     width: 95%;
 }
 
@@ -15,16 +15,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 header img {
     width: 75px;
     height: 25px;
-    padding-top: 15px;
+    padding-top: 20px;
 }
 
-header ul {
-    width: 25%;
+header div {
+    width: 350px;
     display: flex;
     list-style: none;
     padding: 0%;
@@ -33,15 +34,17 @@ header ul {
     font-size: 16px;
 }
 
-header ul li {
+header a {
     width: 50%;
-    height: 100%;
+    height: 45px;
     text-align: center;
-    padding-top: 15px;
     border-top: 3px solid transparent;
+    padding-top: 20px;
+    text-decoration: none;
+    color: black;
 }
 
-header ul li:hover {
+header a:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
     cursor: pointer;
@@ -49,5 +52,737 @@ header ul li:hover {
 
 /* HEADER End */
 
+/* MAIN : START */
 
 
+main nav h1 {
+    margin-bottom: 5px;
+}
+
+main nav > p {
+    margin-top: 5px;
+}
+
+/*-- Searchbar : Start --*/
+
+#searchbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#searchbar button:first-child {
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    cursor: pointer;
+    background: #F2F2F2;
+    position: relative;
+}
+
+.fa-location-dot {
+    position: absolute;
+    font-size: 22px;
+    top: 13px;
+    left: 18px;
+}
+
+#searchbar form {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    border: 1px solid #F2F2F2;
+    height: 48px;
+}
+
+#searchbar form input {
+    border-style: none;
+    height: 44px;
+    width: 195px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+#searchbar button:nth-of-type(2) {
+    height: 50px;
+    width: 150px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-style: none;
+    background-color: #0065FC;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0%;
+}
+
+#searchbar button:nth-of-type(2):hover {
+    cursor: pointer;
+}
+
+#mobile-button {
+    display: none;
+    border-style: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    background-color: #0065FC;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    right: 15px;
+}
+
+/* -- Searchbar : end -- */
+
+/* -- Filter : start -- */
+
+#filter {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+#filter > button {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: white;
+    border: 2px solid #D9D9D9;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+#filter button:hover {
+    cursor: pointer;
+    background-color: #DEEBFF;
+}
+
+#filter button > i {
+    font-size: 22px;
+    color: #0065FC;
+    margin: 10px;
+}
+
+#info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#info > i {
+    color: #0065FC;
+    border: 1px solid #D9D9D9;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    padding-top: 3px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    padding-left: 6px;
+}
+
+#info p {
+    margin: 0%;
+}
+
+/* -- Filter : end -- */
+
+/* -- Cards : start -- */
+
+#cards {
+    display: flex;
+    height: 600px;
+    justify-content: space-between;
+}
+
+#first-card {
+    background-color: #F2F2F2;
+    width: 950px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#first-card h1 {
+    width: 880px;
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+#first-card > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 470px;
+    width: 925px;
+}
+
+#first-card div article {
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+    height: 200px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: white;
+    padding: 4px;
+    box-shadow: 4px 4px 10px lightgrey;
+}
+
+#first-card div article:hover {
+    cursor: pointer;
+}
+
+#first-card div article img {
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+#first-card div article h3 {
+    text-align: left;
+    margin: 5px;
+    font-size: 16px;
+}
+
+#first-card div article p {
+    margin: 0px;
+    margin-left: 5px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.first-stars {
+    width: auto;
+    text-align: left;
+    margin: 5px;
+    margin-top: 14px;
+    margin-bottom: 0px;
+}
+
+.first-stars i {
+    font-size: 14px;
+    color: #0065FC;
+}
+
+.first-stars i:last-child{
+    color: #F2F2F2;
+}
+
+
+#first-card > p {
+    width: 880px;
+    margin-top: 0%;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#second-card {
+    background-color: #F2F2F2;
+    width: 450px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#second-card h1 {
+    font-size: 26px;
+    margin: 0%;
+    height: fit-content;
+    margin-top: 14px;
+    margin-right: 100px;
+}
+
+#second-card>i {
+    font-size: 20px;
+    text-align: left;
+    height: fit-content;
+    margin-top: 15px;
+    margin-left: 6px;
+    color: #0065FC;
+}
+
+#second-card>div {
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between ;
+    margin-bottom: 15px;
+}
+
+#second-card>div article {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 140px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: white;
+    flex-wrap: wrap;
+    padding: 4px;
+    box-shadow: 4px 4px 10px lightgrey;
+}
+
+#second-card>div article:hover {
+    cursor: pointer;
+}
+
+#second-card>div article img {
+    width: 32.5%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+#second-card>div article h3 {
+    text-align: left;
+    font-size: 16px;
+    margin: 10px;
+    width: 65%;
+}
+
+#second-card>div article p {
+    font-size: 14px;
+    margin: 0px;
+    margin-left: 10px;
+    height: 16px;
+}
+
+#stars1 i, #stars2 i, #stars3 i {
+    font-size: 14px;
+    color: #0065FC;
+}
+
+#stars1 i:last-child, #stars2 i:last-child, #stars3 i:last-child {
+    color: #F2F2F2;
+}
+
+#stars1 {
+    margin-top: 64px;
+    margin-left: 10px;
+}
+
+#stars2 {
+    margin-top: 46px;
+    margin-left: 10px;
+}
+
+#stars3 {
+    margin-top: 64px;
+    margin-left: 10px;
+}
+
+
+
+/* Cards : End */ 
+
+/* Activity-cards : Start */
+
+#activity {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#activity h1 {
+    font-size: 26px;
+    width: 95%;
+}
+
+#activity-cards {
+    width: 95%;
+    height: 475px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#activity-cards article {
+    width: 23%;
+    border-radius: 25px;
+    border-style: none;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px 10px lightgrey;
+    background-color: white;
+}
+
+#activity-cards article:hover {
+    cursor: pointer;
+}
+
+#activity-cards article img {
+    width: 100%;
+    height: 87.5%;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    object-fit: cover;
+}
+
+#activity-cards article h3 {
+    font-size: 15px;
+    width: 90%;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.footer-content {
+    width: 30%;
+}
+
+.footer-content ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.footer-content p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-content ul li:hover {
+    cursor: pointer;
+    color: #0065FC;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+    header ul {
+        width: 250px;
+    }
+
+    #filter {
+        flex-wrap: wrap;
+        gap: 0px 10px;
+    }
+
+    #filter>h3 {
+        width: 100%;
+    }
+
+    #cards {
+        flex-direction: column;
+        height: 925px;
+        justify-content: space-between;
+    }
+
+    #first-card {
+        width: 100%;
+        height: 600px;
+    }
+
+    #second-card {
+        width: 100%;
+        height: 300px;
+    }
+
+    #second-card>h1 {
+        margin-right: 615px;
+    }
+
+    #second-card>div {
+        flex-direction: row;
+        height: fit-content;
+        width: 925px;
+        justify-content: space-around;
+    }
+
+    #second-card>div article {
+        width: 265px;
+        height: 150px;
+    }
+
+    #second-card>div article h3 {
+        margin: 10px;
+    }
+
+    #second-card>div article p {
+        margin: 10px;
+        margin-top: 0px;
+    }
+
+    #stars1 {
+        margin-top: 47px;
+    }
+
+    #stars2 {
+        margin-top: 47px;
+    }
+
+    #stars3 {
+        margin-top: 65px;
+    }
+
+    #activity h1 {
+        width: 883px;
+    }
+
+    #activity-cards {
+        height: 300px;
+        width: 883px;
+    }
+
+    #activity-cards article img {
+        height: 77.5%;
+    }
+
+    #activity-cards article h3 {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        width: 100%;
+    }
+
+    /* HEADER : START */
+    header {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    header div {
+        width: 100%;
+    }
+
+    header div a {
+        height: 30px;
+        border-top: none;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 0px;
+        padding-top: 25px;
+    }
+
+    header div a:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;;
+    }
+
+    /* HEADER : END */
+
+    /* MAIN : START */
+
+    main nav h1 {
+        margin-top: 20px;
+    }
+
+    main nav h1,
+    main nav p {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #searchbar {
+        padding-left: 15px;
+    }
+
+    #searchbar form {
+        width: 250px;
+        justify-content: flex-start;
+    }
+
+    #searchbar form input {
+        width: 235px;
+        margin-left: 5px;
+    }
+
+    #searchbar button:nth-of-type(2) {
+        display: none;
+    }
+
+    #mobile-button {
+        display: block;
+    }
+
+    #filter {
+        flex-wrap: wrap;
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 15px;
+        justify-content: space-around;
+    }
+
+    #filter > h3 {
+        width: 100%;
+        margin: 0%;
+    }
+
+    #filter button {
+        width: 160px;
+        align-items: center;
+        font-size: 16px;
+        position: relative;
+        padding-left: 50px;
+    }
+
+    #filter button > i {
+        font-size: 20px;
+    }
+
+    #filter button .fa-money-bill-wave {
+        position: absolute;
+        margin: 0px;
+        left: 15px;
+    }
+
+    #filter button .fa-person {
+        position: absolute;
+        margin: 0px;
+        left: 18px;
+    }
+
+    #filter button .fa-heart {
+        position: absolute;
+        margin: 0px;
+        left: 16px;
+    }
+
+    #filter button .fa-fire {
+        position: absolute;
+        margin: 0px;
+        left: 15px;
+    }
+
+    #info {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #cards {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    #first-card {
+        width: 100%;
+        height: 1575px;
+        align-items: center;
+        background-color: white;
+    }
+
+    #first-card h1 {
+        width: 350px;
+        text-align: left;
+    }
+
+    #first-card div {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 1450px;
+    }
+
+    #first-card div article {
+        width: 350px;
+        height: 225px;
+    }
+
+    #first-card > p {
+        width: 350px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    #second-card {
+        width: 100%;
+        height: 569px;
+        border-radius: 0%;
+    }
+
+    #second-card h1 {
+        margin-right: 65px;
+    }
+
+    #second-card i {
+       
+    }
+
+    #second-card div {
+        
+    }
+
+    #second-card div article {
+        width: 335px;
+    }
+
+    #activity h1 {
+        width: 87.5%;
+    }
+
+    #activity-cards {
+        width: 87.5%;
+        flex-direction: column;
+        height: 950px;
+    }
+
+    #activity-cards article {
+        width: 100%;
+        height: 225px;
+    }
+
+    #activity-cards article img {
+        height: 75%;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-left: 25px;
+    }
+
+    .footer-content  {
+        width: 100%;
+    }
+
+    .footer-content p {
+        width: 100%;
+    }
+}
