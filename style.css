@@ -193,9 +193,9 @@ main nav > p {
     border-radius: 50%;
     text-align: center;
     padding: 5px;
-    padding-top: 3px;
+    padding-top: 4px;
     padding-bottom: 8px;
-    padding-right: 5px;
+    padding-right: 6px;
     padding-left: 6px;
 }
 
@@ -215,7 +215,7 @@ main nav > p {
 
 #first-card {
     background-color: #F2F2F2;
-    width: 950px;
+    width: 66%;
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -223,7 +223,7 @@ main nav > p {
 }
 
 #first-card h1 {
-    width: 880px;
+    width: 92.5%;
     font-size: 26px;
     margin-top: 30px;
 }
@@ -234,14 +234,14 @@ main nav > p {
     justify-content: space-around;
     align-content: space-around;
     height: 470px;
-    width: 925px;
+    width: 97.5%;
 }
 
 #first-card div article {
     display: flex;
     flex-direction: column;
-    width: 265px;
-    height: 200px;
+    width: 29%;
+    height: 42.5%;
     border-radius: 20px;
     border-style: none;
     background-color: white;
@@ -293,7 +293,7 @@ main nav > p {
 
 
 #first-card > p {
-    width: 880px;
+    width: 92.5%;
     margin-top: 0%;
     margin-bottom: 20px;
     font-weight: bold;
@@ -302,7 +302,7 @@ main nav > p {
 
 #second-card {
     background-color: #F2F2F2;
-    width: 450px;
+    width: 32%;
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -310,25 +310,30 @@ main nav > p {
     align-items: center;
 }
 
-#second-card h1 {
+#second-card>div:first-child {
+    display: flex;
+    align-items: center;
+    width: 83%;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+#second-card>div:first-child h1 {
     font-size: 26px;
     margin: 0%;
     height: fit-content;
-    margin-top: 14px;
-    margin-right: 100px;
 }
 
-#second-card>i {
+#second-card>div:first-child i {
     font-size: 20px;
     text-align: left;
     height: fit-content;
-    margin-top: 15px;
-    margin-left: 6px;
     color: #0065FC;
 }
 
-#second-card>div {
+#second-card>div:last-child {
     height: 480px;
+    width: 83%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -336,11 +341,11 @@ main nav > p {
     margin-bottom: 15px;
 }
 
-#second-card>div article {
+#second-card>div:last-child article {
     display: flex;
     flex-direction: column;
-    width: 375px;
-    height: 140px;
+    width: 100%;
+    height: 30%;
     border-radius: 20px;
     border-style: none;
     background-color: white;
@@ -349,11 +354,11 @@ main nav > p {
     box-shadow: 4px 4px 10px lightgrey;
 }
 
-#second-card>div article:hover {
+#second-card>div:last-child article:hover {
     cursor: pointer;
 }
 
-#second-card>div article img {
+#second-card>div:last-child article img {
     width: 32.5%;
     height: 100%;
     object-fit: cover;
@@ -361,23 +366,17 @@ main nav > p {
     border-bottom-left-radius: 18px;
 }
 
-#second-card>div article h3 {
+#second-card>div:last-child article h3 {
     text-align: left;
     font-size: 16px;
     margin: 10px;
     width: 65%;
 }
 
-#second-card>div article p {
+#second-card>div:last-child article p {
     font-size: 14px;
     margin: 0px;
     margin-left: 10px;
-    height: 16px;
-}
-
-#stars1 i, #stars2 i, #stars3 i {
-    font-size: 14px;
-    color: #0065FC;
 }
 
 #stars1 i:last-child, #stars2 i:last-child, #stars3 i:last-child {
@@ -385,18 +384,23 @@ main nav > p {
 }
 
 #stars1 {
-    margin-top: 64px;
+    margin-top: 70px;
     margin-left: 10px;
 }
 
 #stars2 {
-    margin-top: 46px;
+    margin-top: 51px;
     margin-left: 10px;
 }
 
 #stars3 {
-    margin-top: 64px;
+    margin-top: 70px;
     margin-left: 10px;
+}
+
+#stars1 i, #stars2 i, #stars3 i {
+    font-size: 14px;
+    color: #0065FC;
 }
 
 
@@ -422,7 +426,6 @@ main nav > p {
     height: 475px;
     display: flex;
     justify-content: space-between;
-    
 }
 
 #activity-cards article {
@@ -480,6 +483,7 @@ footer div p {
 }
 
 footer div ul li {
+    width: fit-content;
     margin-bottom: 10px;
     font-size: 18px;
 }
@@ -506,7 +510,7 @@ footer div ul li:hover {
 
     #cards {
         flex-direction: column;
-        height: 925px;
+        height: 900px;
         justify-content: space-between;
     }
 
@@ -517,44 +521,41 @@ footer div ul li:hover {
 
     #second-card {
         width: 100%;
-        height: 300px;
+        height: 275px;
     }
 
-    #second-card>h1 {
-        margin-right: 615px;
+    #second-card>div:first-child {
+        width: 92.5%;
+        height: 20%;
+        margin: 0px;
     }
 
-    #second-card>div {
+    #second-card>div:last-child {
         flex-direction: row;
-        height: fit-content;
-        width: 925px;
+        width: 97.5%;
         justify-content: space-around;
+        height: 50%;
     }
 
-    #second-card>div article {
-        width: 265px;
-        height: 150px;
-    }
+    #second-card>div:last-child article {
+        width: 29%;
+        height: 100%;
 
-    #second-card>div article h3 {
-        margin: 10px;
-    }
-
-    #second-card>div article p {
-        margin: 10px;
-        margin-top: 0px;
     }
 
     #stars1 {
-        margin-top: 47px;
+        width: fit-content;
+        margin-top: 44px;
     }
 
     #stars2 {
-        margin-top: 47px;
+        width: fit-content;
+        margin-top: 44px;
     }
 
     #stars3 {
-        margin-top: 65px;
+        width: fit-content;
+        margin-top: 63px;
     }
 
     #activity h1 {
@@ -573,6 +574,7 @@ footer div ul li:hover {
     #activity-cards article h3 {
         width: 85%;
     }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -657,7 +659,7 @@ footer div ul li:hover {
     }
 
     #filter button {
-        width: 160px;
+        width: 45%;
         align-items: center;
         font-size: 16px;
         position: relative;
@@ -722,7 +724,7 @@ footer div ul li:hover {
     }
 
     #first-card div article {
-        width: 350px;
+        width: 90%;
         height: 225px;
     }
 
@@ -740,14 +742,6 @@ footer div ul li:hover {
 
     #second-card h1 {
         margin-right: 65px;
-    }
-
-    #second-card i {
-       
-    }
-
-    #second-card div {
-        
     }
 
     #second-card div article {
@@ -785,4 +779,5 @@ footer div ul li:hover {
     footer div p {
         width: 100%;
     }
+
 }
