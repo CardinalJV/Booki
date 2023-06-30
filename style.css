@@ -577,7 +577,7 @@ footer div ul li:hover {
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     body {
         width: 100%;
@@ -659,7 +659,7 @@ footer div ul li:hover {
     }
 
     #filter button {
-        width: 45%;
+        width: 47.5%;
         align-items: center;
         font-size: 16px;
         position: relative;
