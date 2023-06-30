@@ -11,20 +11,20 @@ body {
     width: 95%;
 }
 
-header {
+header>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
 }
 
-header img {
+header>div img {
     width: 75px;
     height: 25px;
     padding-top: 20px;
 }
 
-header div {
+header>div div {
     width: 350px;
     display: flex;
     list-style: none;
@@ -34,7 +34,7 @@ header div {
     font-size: 16px;
 }
 
-header a {
+header>div div a {
     width: 50%;
     height: 45px;
     text-align: center;
@@ -44,7 +44,7 @@ header a {
     color: black;
 }
 
-header a:hover {
+header>div div a:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
     cursor: pointer;
@@ -55,24 +55,24 @@ header a:hover {
 /* MAIN : START */
 
 
-main nav h1 {
+header nav h1 {
     margin-bottom: 5px;
 }
 
-main nav > p {
+header nav > p {
     margin-top: 5px;
 }
 
 /*-- Searchbar : Start --*/
 
-#searchbar {
+#searchbar-content{
     display: flex;
     align-items: center;
     position: relative;
     margin-bottom: 20px;
 }
 
-#searchbar button:first-child {
+#searchbar-content button:first-child {
     width: 50px;
     height: 50px;
     border-style: none;
@@ -90,7 +90,7 @@ main nav > p {
     left: 18px;
 }
 
-#searchbar form {
+#searchbar-content form {
     display: flex;
     width: 200px;
     align-items: center;
@@ -100,7 +100,7 @@ main nav > p {
     height: 48px;
 }
 
-#searchbar form input {
+#searchbar-content form input {
     border-style: none;
     height: 44px;
     width: 195px;
@@ -110,7 +110,7 @@ main nav > p {
     
 }
 
-#searchbar button:nth-of-type(2) {
+#searchbar-content button:nth-of-type(2) {
     height: 50px;
     width: 150px;
     border-top-right-radius: 15px;
@@ -123,7 +123,7 @@ main nav > p {
     padding: 0%;
 }
 
-#searchbar button:nth-of-type(2):hover {
+#searchbar-content button:nth-of-type(2):hover {
     cursor: pointer;
 }
 
@@ -137,7 +137,7 @@ main nav > p {
     color: white;
     font-size: 16px;
     position: absolute;
-    right: 15px;
+    right: 0px;
 }
 
 /* -- Searchbar : end -- */
@@ -577,207 +577,3 @@ footer div ul li:hover {
     
 }
 
-@media screen and (max-width: 767px) {
-
-    body {
-        width: 100%;
-    }
-
-    /* HEADER : START */
-    header {
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin-top: 20px;
-        margin-bottom: 25px;
-    }
-
-    header div {
-        width: 100%;
-    }
-
-    header div a {
-        height: 30px;
-        border-top: none;
-        border-bottom: 3px solid #F2F2F2;
-        padding-bottom: 0px;
-        padding-top: 25px;
-    }
-
-    header div a:hover {
-        border-top: none;
-        border-bottom: 3px solid #0065FC;;
-    }
-
-    /* HEADER : END */
-
-    /* MAIN : START */
-
-    main nav h1 {
-        margin-top: 20px;
-    }
-
-    main nav h1,
-    main nav p {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #searchbar {
-        padding-left: 15px;
-    }
-
-    #searchbar form {
-        width: 250px;
-        justify-content: flex-start;
-    }
-
-    #searchbar form input {
-        width: 235px;
-        margin-left: 5px;
-    }
-
-    #searchbar button:nth-of-type(2) {
-        display: none;
-    }
-
-    #mobile-button {
-        display: block;
-    }
-
-    #filter {
-        flex-wrap: wrap;
-        padding-left: 15px;
-        padding-right: 15px;
-        gap: 15px;
-        justify-content: space-around;
-    }
-
-    #filter > h3 {
-        width: 100%;
-        margin: 0%;
-    }
-
-    #filter button {
-        width: 47.5%;
-        align-items: center;
-        font-size: 16px;
-        position: relative;
-        padding-left: 50px;
-    }
-
-    #filter button > i {
-        font-size: 20px;
-    }
-
-    #filter button .fa-money-bill-wave {
-        position: absolute;
-        margin: 0px;
-        left: 15px;
-    }
-
-    #filter button .fa-person {
-        position: absolute;
-        margin: 0px;
-        left: 18px;
-    }
-
-    #filter button .fa-heart {
-        position: absolute;
-        margin: 0px;
-        left: 16px;
-    }
-
-    #filter button .fa-fire {
-        position: absolute;
-        margin: 0px;
-        left: 15px;
-    }
-
-    #info {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    #cards {
-        flex-direction: column-reverse;
-        height: auto;
-    }
-
-    #first-card {
-        width: 100%;
-        height: 1575px;
-        align-items: center;
-        background-color: white;
-    }
-
-    #first-card h1 {
-        width: 350px;
-        text-align: left;
-    }
-
-    #first-card div {
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        height: 1450px;
-    }
-
-    #first-card div article {
-        width: 90%;
-        height: 225px;
-    }
-
-    #first-card > p {
-        width: 350px;
-        margin: 10px;
-        text-align: center;
-    }
-
-    #second-card {
-        width: 100%;
-        height: 569px;
-        border-radius: 0%;
-    }
-
-    #second-card h1 {
-        margin-right: 65px;
-    }
-
-    #second-card div article {
-        width: 335px;
-    }
-
-    #activity h1 {
-        width: 87.5%;
-    }
-
-    #activity-cards {
-        width: 87.5%;
-        flex-direction: column;
-        height: 950px;
-    }
-
-    #activity-cards article {
-        width: 100%;
-        height: 225px;
-    }
-
-    #activity-cards article img {
-        height: 75%;
-    }
-
-    footer {
-        flex-direction: column;
-        padding-left: 25px;
-    }
-
-    footer div  {
-        width: 100%;
-    }
-
-    footer div p {
-        width: 100%;
-    }
-
-}
